@@ -54,10 +54,11 @@ int main()
             direction.y *= -1; // Invertir dirección vertical
         }
 
-        // limpiar la ventana
-        window.clear();
+        window.clear(sf::Color::Black); // Limpiar la ventana con un color de fondo
+
         // dibujar el sprite del DVD
         window.draw(dvdSprite);
+        
         // mostrar el contenido de la ventana
         window.display();
     }
